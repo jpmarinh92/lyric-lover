@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LyricLover</title>
+    <link rel="styleheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.3/css/bulma.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <section class="hero has-text-centered" id="header">
+        <div class="hero-body">
+            <p class="title">
+                ☘️ LyricLover ☘️  
+            </p>
+            <p class="subtitle">
+                The Best Application to Retrieve Lyrics from Your Favorite Artist's Songs!
+            </p>
+            <p class="subtitle">
+                Powered By <a class ="subtitle" href="https://www.theaudiodb.com/" target="_blank">TheAudioDB</a> and <a class="subtitle" href="https://www.vagalume.com.br" target="_blank">vagalume.</a>
+            </p>
+        </div>
+    </section>
+
+    <!-- container for interactive part of page -->
+    <main class="main">
+        <!-- left half of page -->
+        <section class="leftSection">
+            <!-- artist name submission -->
+            <div id="inputSection">
+                <form id="form">
+                    <label id="name">
+                        <p class="formText">Artist Name:</p>
+                    </label>
+                    <input  id="input" class="input is-info" type="text" placeholder="Your Favorite Artist!">
+                    <button id="submitBtn" class="button is-success is-size-6-mobile is-size-5-tablet is-size-5-desktop" type="button">
+                        <a href="#container">Search</a>
+                    </button>
+                </form>
+            </div>
+    
+            <!-- genres listed -->
+            <div id="genresContainer">
+                <section id="genres" class="buttons is-centered">
+                    <button id="album" class="button is-success">
+                        <span id="search-btn-text">
+                            <a href="#container">Most Loved Albums</a>
+                        </span>
+                    </button>
+                    <button id="trend" class="button is-success">
+                        <span id="search-btn-text">
+                            <a href="#container">Trending Tracks</a>
+                        </span>
+                    </button>
+                    <button id="loved" class="button is-success">
+                        <span id="search-btn-text">
+                            <a href="#container">Most Loved Tracks</a>
+                        </span>
+                    </button>
+                </section>
+            </div>  
+        </section>
+
+
+        <!-- song titles returned on right side of page-->
+        <section class="rightSection buttons" id="container">
+            <div class="songColumn" id="leftSongColumn">
+                <a class="button is-success song is-size-6-mobile is-size-5-tablet is-size-5-desktop" id="song1"></a>
+                <a class="button is-success song is-size-6-mobile is-size-5-tablet is-size-5-desktop" id="song2"></a>
+                <a class="button is-success song is-size-6-mobile is-size-5-tablet is-size-5-desktop" id="song3"></a>
+                <a class="button is-success song is-size-6-mobile is-size-5-tablet is-size-5-desktop" id="song4"></a>
+                <a class="button is-success song is-size-6-mobile is-size-5-tablet is-size-5-desktop" id="song5"></a>
+            </div>
+            <div class="songColumn" id="rightSongColumn">
+                <a class="button is-success song is-size-6-mobile is-size-5-tablet is-size-5-desktop" id="song6"></a>
+                <a class="button is-success song is-size-6-mobile is-size-5-tablet is-size-5-desktop" id="song7"></a>
+                <a class="button is-success song is-size-6-mobile is-size-5-tablet is-size-5-desktop" id="song8"></a>
+                <a class="button is-success song is-size-6-mobile is-size-5-tablet is-size-5-desktop" id="song9"></a>
+                <a class="button is-success song is-size-6-mobile is-size-5-tablet is-size-5-desktop" id="song10"></a>
+            </div>
+        </section>
+        
+    </main>
+
+    <div id="storageContainer">
+        <section id="genres" class="buttons is-centered">
+            <div id="searchHistoryText">
+                <label id="name">
+                    <p class="formText" id="searchFont">Search History:</p>
+                </label>
+            </div>
+            <div id="searchHistoryButtons">
+                <button id="artist1" class="button is-success artistHistory">
+                    <span id="search-btn-text">
+                        <a href="#container"></a>
+                    </span>
+                </button>
+                <button id="artist2" class="button is-success artistHistory">
+                    <span id="search-btn-text">
+                        <a href="#container"></a>
+                    </span>
+                </button>
+                <button id="artist3" class="button is-success artistHistory">
+                    <span id="search-btn-text">
+                        <a href="#container"></a>
+                    </span>
+                </button>
+                <button id="artist4" class="button is-success artistHistory">
+                    <span id="search-btn-text">
+                        <a href="#container"></a>
+                    </span>
+                </button>
+                <button id="artist5" class="button is-success artistHistory">
+                    <span id="search-btn-text">
+                        <a href="#container"></a>
+                    </span>
+                </button>
+            </div>
+        </section>
+    </div>  
+
+    <!-- Footer -->
+    <footer id="footer">
+      <p class="subtitle">Tracks and Lyrics ❤️ Brought to You With Love </p>
+      <p class="subtitle" id="footer-lyricLover"> By ☘️LyricLover☘️</p> 
+    </footer>
+  
+    <script src="./assets/js/script.js"></script>    
+</body>
+
+</html>
