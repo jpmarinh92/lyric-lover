@@ -14,7 +14,7 @@
 * Vagalume API
 
 ## Link to Deployed Application
-https://osamadahnoun.github.io/LyricLover/
+https://jpmarinh92.github.io/lyric-lover/
 
 ## Screenshot of Deployed Application
 ![Screenshot of Deployed Application](./assets/images/LLscreenshot.png)
